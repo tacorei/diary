@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>シンプル計算機</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+<div class="calculator">
+    <div id="display" class="display">0</div> <!-- 計算結果表示エリア -->
+    <div class="buttons">
+        <!-- 第二行 -->
+        <button onclick="clearDisplay()">AC</button>
+        <button onclick="toggleSign()">+/-</button>
+        <button onclick="percentage()">%</button>
+        <button onclick="inputOperator('÷')">÷</button>
+        <!-- 第三行 -->
+        <button onclick="inputNumber(7)">7</button>
+        <button onclick="inputNumber(8)">8</button>
+        <button onclick="inputNumber(9)">9</button>
+        <button onclick="inputOperator('×')">×</button>
+        <!-- 第四行 -->
+        <button onclick="inputNumber(4)">4</button>
+        <button onclick="inputNumber(5)">5</button>
+        <button onclick="inputNumber(6)">6</button>
+        <button onclick="inputOperator('-')">-</button>
+        <!-- 第五行 -->
+        <button onclick="inputNumber(1)">1</button>
+        <button onclick="inputNumber(2)">2</button>
+        <button onclick="inputNumber(3)">3</button>
+        <button onclick="inputOperator('+')">+</button>
+        <!-- 第六行 -->
+        <button class="double" onclick="inputNumber(0)">0</button> <!-- ２列分の幅 -->
+        <button onclick="inputDecimal()">.</button>
+        <button onclick="calculate()">=</button>
+        <!-- 新しい機能のボタンを追加 -->
+        <button onclick="calculateSquareRoot()">√</button>
+        <button onclick="inputPi()">π</button>
+    </body>
+            
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
+

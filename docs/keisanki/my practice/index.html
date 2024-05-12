@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>一次方程式計算機</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="equation"> <!-- 式を横一列に並べるためのコンテナ -->
+            <input id="aValue" type="number" placeholder="a">x +
+            <input id="bValue" type="number" placeholder="b"> =
+            <input id="cValue" type="number" placeholder="c">
+            <button onclick="clearFields()">AC</button> <!-- 結果をクリアするボタン -->
+        </div>
+        <div class="buttons">
+            <button onclick="solveEquation('+')">足し算</button>
+            <button onclick="solveEquation('-')">引き算</button>
+            <button onclick="solveEquation('*')">掛け算</button>
+            <button onclick="solveEquation('/')">割り算</button>
+        </div>
+        <div id="result">解: </div>
+        <div id="equation">式: </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

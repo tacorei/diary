@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.equation, .buttons {
+    display: flex;
+    justify-content: space-between; /* 要素を均等に配置 */
+    align-items: center; /* 中央揃え */
+    margin-bottom: 20px; /* ボタン群との間隔 */
+}
+
+input[type="number"], button {
+    padding: 10px;
+    margin: 0 5px; /* 入力フィールドとボタンの間隔 */
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+input[type="number"] {
+    flex-grow: 1; /* 入力フィールドを均等に拡張 */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    font-size: 1.5rem;
+}
